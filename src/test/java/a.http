@@ -1,0 +1,12 @@
+
+GET http://localhost:8848/product/addnew
+Authorization: Basic dXNlcm5hbWU6MTIzNDU2
+
+### POST request example with JSON payload
+POST http://localhost:8080/product/addnew
+Content-Type: application/json
+
+{
+  "productName": "New Product",
+  "price": 150
+}
