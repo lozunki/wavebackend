@@ -1,12 +1,22 @@
 
 GET http://localhost:8848/product/addnew
-Authorization: Basic dXNlcm5hbWU6MTIzNDU2
 
-### POST request example with JSON payload
-POST http://localhost:8080/product/addnew
+### 向 /product/add 发送 POST 请求
+POST http://localhost:8848/product/add
 Content-Type: application/json
 
 {
-  "productName": "New Product",
-  "price": 150
+  "productId": 1,
+  "productCore": 12345,
+  "productName": "Sample Product",
+  "productImageUrlShow": "http://example.com/show.jpg",
+  "productImageUrlDescription": "http://example.com/desc.jpg",
+  "productImageDescription": "Sample image description",
+  "productContent": "{\"key\":\"value\"}",
+  "productDescription": "Sample product description",
+  "productPrice": 99.99,
+  "productAmount": 100,
+  "createTime": "2024-11-07",
+  "updateTime": "2024-11-07"
 }
+

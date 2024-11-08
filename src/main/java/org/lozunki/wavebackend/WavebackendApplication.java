@@ -9,7 +9,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class WavebackendApplication {
 
     public static void main(String[] args) {
-        log.error("1212121212121212121212121212121212121212121212121");
         SpringApplication.run(WavebackendApplication.class, args);
     }
 

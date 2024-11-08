@@ -11,8 +11,8 @@ server:
 spring:
   security:
     user:
-      name: username      # 自定义用户名
-      password: 123456  # 自定义密码
+      name: "admin"  # 设置为空字符串
+      password: "admin"  # 设置为空字符串
   # 数据源的配置
   datasource:
     # 连接数据库的URL
@@ -50,16 +50,7 @@ spring:
     # 静态资源配置
     resources:
       # 静态资源文件夹，如果多个，使用英文的逗号分隔，本地路径必须使用 file: 作为前缀
-      static-locations: classpath:static, file:${tea-store.upload.root-dir-name}
-
-# 日志配置
-logging:
-  # 显示级别
-  level:
-    # 某根包（配置将应用于此包及子孙包）的显示级别
-    cn.tedu.tea: trace
-
-# 学茶商城的自定义配置
+      static-locations: classpath:static, file:${}
 tea-store:
   # 数据访问的相关配置
   dao:
