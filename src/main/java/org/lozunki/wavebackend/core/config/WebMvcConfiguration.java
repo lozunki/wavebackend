@@ -1,4 +1,4 @@
-package org.lozunki.wavebackend.core;
+package org.lozunki.wavebackend.core.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

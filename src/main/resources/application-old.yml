@@ -5,7 +5,7 @@
 # 服务器的配置
 server:
   # 服务占用的端口
-  port: 8848
+  port: 9100
 
 # Spring的配置
 spring:
@@ -16,11 +16,11 @@ spring:
   # 数据源的配置
   datasource:
     # 连接数据库的URL
-    url: jdbc:mysql://localhost:3306/wave?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://121.43.235.181:3306/wave?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
     # 数据库用户名
-    username: root
+    username: ykzx
     # 数据库密码
-    password: root
+    password: YkZx-2023888666
     # Druid连接池的配置
     druid:
       # 初始化连接数量
@@ -28,16 +28,16 @@ spring:
       # 最大激活数量
       max-active: 20
   # Redis配置
-#  redis:
-#    # 主机
-#    host: localhost
-#    # 端口
-#    port: 6379
-#    # 用户名
-#    username: ~
-#    # 密码
-#    password: 123456
-#  # servlet配置
+  #  redis:
+  #    # 主机
+  #    host: localhost
+  #    # 端口
+  #    port: 6379
+  #    # 用户名
+  #    username: ~
+  #    # 密码
+  #    password: 123456
+  #  # servlet配置
   servlet:
     multipart:
       max-file-size: 500MB
@@ -50,8 +50,8 @@ logging:
     org.lozunki.wavebackend: trace
 wavebackend:
   upload:
-    host: http://localhost:${server.port}/
-    root-dir-name: C:/Users/zunkilo/.m2/product/
+    host: http://192.168.70.10:9100/
+    root-dir-name: /var/var/wavefront
     base-dir-name: resources/
     article-image:
       types: image/jpeg, image/png, image/gif
