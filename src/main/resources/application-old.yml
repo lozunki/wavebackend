@@ -53,7 +53,7 @@ wavebackend:
     host: http://192.168.70.10:9100/
     root-dir-name: /var/var/wavefront
     base-dir-name: resources/
-    article-image:
+    product-image:
       types: image/jpeg, image/png, image/gif
       max-size: 5
     goods-image:

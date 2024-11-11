@@ -35,17 +35,16 @@ public class ResourceController {
 
     private final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy/MM/dd/");
 
-    @Value("${wavebackend.upload.article-image.max-size}")
+    @Value("${wavebackend.upload.product-image.max-size}")
     private Integer articleImageMaxSize;
 
-    @Value("${wavebackend.upload.article-image.types}")
+    @Value("${wavebackend.upload.product-image.types}")
     private List<String> articleImageValidTypes;
 
-    private final String articleImageDirName = "article-image" + File.separator;
+    private final String articleImageDirName = "product-image" + File.separator;
 
     @PostMapping("/upload/product/image/")
     public Response uploadArticleImage(@RequestParam("file") MultipartFile multipartFile) throws Throwable {
-        log.error("进来了");
         if (multipartFile == null || multipartFile.isEmpty()) {
             String message = "上传文章图片失败，请选择您要上传的文件！";
             log.warn(message);

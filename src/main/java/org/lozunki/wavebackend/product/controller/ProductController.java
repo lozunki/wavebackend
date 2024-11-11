@@ -1,10 +1,12 @@
 package org.lozunki.wavebackend.product.controller;
 
 import lombok.extern.slf4j.Slf4j;
-import org.lozunki.wavebackend.product.entity.PO.Product;
+import org.lozunki.wavebackend.common.web.Response;
 import org.lozunki.wavebackend.product.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
@@ -13,19 +15,21 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    // 创建新的产品
-    @PostMapping("/add")
-    public String addNewProduct(@RequestBody Product product) {
-        int result = productService.addNewProduct(product);
-        return result > 0 ? "Product added successfully" : "Failed to add product";
-    }
-    @GetMapping("/addnew")
-    public String addNewProduct() {
-        return "addNewProduct";
-    }
-    @GetMapping("/delete")
-    public String deleteProduct() {
-        return "addNewProduct";
+    @GetMapping("/viewall")
+    public Response getall() {
+        Response response = new Response();
+        response.setData(1);
+        response.setState(200);
+        response.setMessage("success");
+        return response;
     }
 
+    @GetMapping("/viewtitle")
+    public Response viewtitle() {
+        Response response = new Response();
+        response.setData(1);
+        response.setState(200);
+        response.setMessage("success");
+        return response;
+    }
 }

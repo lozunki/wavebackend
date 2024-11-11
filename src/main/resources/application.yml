@@ -14,7 +14,7 @@ spring:
   # Profile的配置
   profiles:
     # 激活哪些Profile配置
-    active: old
+    active: dev
   # Jackson框架的配置
   jackson:
     # 响应的JSON结果中默认包含什么样的属性

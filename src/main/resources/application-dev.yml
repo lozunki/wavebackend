@@ -53,7 +53,7 @@ wavebackend:
     host: http://localhost:${server.port}/
     root-dir-name: C:/Users/zunkilo/.m2/product/
     base-dir-name: resources/
-    article-image:
+    product-image:
       types: image/jpeg, image/png, image/gif
       max-size: 5
     goods-image:
