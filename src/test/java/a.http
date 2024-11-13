@@ -1,5 +1,5 @@
 
-GET http://localhost:8848/product/addnew
+GET http://192.168.70.204:8848/product/viewall
 
 ### 向 /product/add 发送 POST 请求
 POST http://localhost:8848/product/add
